@@ -14,7 +14,7 @@ change.
 ## Completed
 
 - **01-design-system**: shadcn/ui (canary) initialized for Tailwind v4; components/ui/ has Button, Card, Dialog, Input, Tabs, Textarea, ScrollArea; lib/utils.ts cn() helper; lucide-react installed; html element locked to `.dark` class for dark-only theme
-- **02-editor-chrome**: `components/editor/editor-navbar.tsx` + `components/editor/project-sidebar.tsx`; navbar with sidebar toggle (PanelLeftOpen/Close); sidebar overlays canvas, slides in from left, tabs (My Projects / Shared), New Project button
+- **02-editor-chrome**: `components/editor/editor-navbar.tsx` + `components/editor/project-sidebar.tsx` + `components/editor/editor-shell.tsx`; navbar with sidebar toggle (PanelLeftOpen/Close); sidebar overlays canvas, slides in from left, tabs (My Projects / Shared), New Project button; EditorShell manages shared sidebar state and is wired into `app/page.tsx`
 
 ## In Progress
 
