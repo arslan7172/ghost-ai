@@ -997,3 +997,4 @@ workflows, and everything in between.
 
 _Built with the Six-File Context System._
 _JavaScript Mastery · 2026_
+# ghost-ai
