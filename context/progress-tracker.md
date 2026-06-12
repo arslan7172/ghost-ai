@@ -5,11 +5,11 @@ change.
 
 ## Current Phase
 
-- In Progress
+- Not Started
 
 ## Current Goal
 
-- Feature 03: Auth (Clerk integration, auth pages, route protection)
+- Feature 04 (TBD from feature-specs)
 
 ## Completed
 
