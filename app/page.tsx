@@ -1,11 +1,11 @@
-import { EditorShell } from "@/components/editor/editor-shell";
+import { auth } from "@clerk/nextjs/server";
+import { redirect } from "next/navigation";
 
-export default function Home() {
-  return (
-    <EditorShell>
-      <main className="flex flex-1 items-center justify-center">
-        <p className="text-foreground/50">ghost-ai</p>
-      </main>
-    </EditorShell>
-  );
+export default async function Home() {
+  const { userId } = await auth();
+  if (userId) {
+    redirect("/editor");
+  } else {
+    redirect("/sign-in");
+  }
 }
