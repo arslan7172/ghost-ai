@@ -9,12 +9,13 @@ change.
 
 ## Current Goal
 
-- Feature 03 (TBD from feature-specs)
+- Feature 03: Auth (Clerk integration, auth pages, route protection)
 
 ## Completed
 
 - **01-design-system**: shadcn/ui (canary) initialized for Tailwind v4; components/ui/ has Button, Card, Dialog, Input, Tabs, Textarea, ScrollArea; lib/utils.ts cn() helper; lucide-react installed; html element locked to `.dark` class for dark-only theme
 - **02-editor-chrome**: `components/editor/editor-navbar.tsx` + `components/editor/project-sidebar.tsx` + `components/editor/editor-shell.tsx`; navbar with sidebar toggle (PanelLeftOpen/Close); sidebar overlays canvas, slides in from left, tabs (My Projects / Shared), New Project button; EditorShell manages shared sidebar state and is wired into `app/page.tsx`
+- **03-auth**: `proxy.ts` with env-var public routes + named `proxy` export; `ClerkProvider` with `dark` theme + CSS variable overrides; two-panel sign-in/sign-up pages (left: logo/tagline/features, right: form; small screens: form only); `/` redirects to `/editor` (authed) or `/sign-in` (unauthed); `UserButton` in editor navbar
 
 ## In Progress
 
@@ -22,7 +23,7 @@ change.
 
 ## Next Up
 
-- Feature 03 (TBD from feature-specs)
+- Feature 04 (TBD from feature-specs)
 
 ## Open Questions
 
