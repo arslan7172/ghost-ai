@@ -5,17 +5,18 @@ change.
 
 ## Current Phase
 
-- Not Started
+- In Progress
 
 ## Current Goal
 
-- Feature 04 (TBD from feature-specs)
+- Feature 05 (TBD from feature-specs)
 
 ## Completed
 
 - **01-design-system**: shadcn/ui (canary) initialized for Tailwind v4; components/ui/ has Button, Card, Dialog, Input, Tabs, Textarea, ScrollArea; lib/utils.ts cn() helper; lucide-react installed; html element locked to `.dark` class for dark-only theme
 - **02-editor-chrome**: `components/editor/editor-navbar.tsx` + `components/editor/project-sidebar.tsx` + `components/editor/editor-shell.tsx`; navbar with sidebar toggle (PanelLeftOpen/Close); sidebar overlays canvas, slides in from left, tabs (My Projects / Shared), New Project button; EditorShell manages shared sidebar state and is wired into `app/page.tsx`
 - **03-auth**: `proxy.ts` with env-var public routes + named `proxy` export; `ClerkProvider` with `dark` theme + CSS variable overrides; two-panel sign-in/sign-up pages (left: logo/tagline/features, right: form; small screens: form only); `/` redirects to `/editor` (authed) or `/sign-in` (unauthed); `UserButton` in editor navbar
+- **04-project-dialogs**: `app/editor/page.tsx` renders `EditorHome` (heading + New Project button); `hooks/use-project-dialogs.ts` manages dialog/form/loading state; `components/editor/project-actions-context.tsx` provides `openCreate/openRename/openDelete` via React context; `components/editor/project-dialogs.tsx` has Create (slug preview), Rename (auto-focus, Enter submits), Delete (destructive confirm) dialogs; `components/editor/project-sidebar.tsx` has mock project data, per-item Pencil/Trash actions for owned projects only, mobile backdrop scrim; `EditorShell` wires everything together
 
 ## In Progress
 
@@ -23,7 +24,7 @@ change.
 
 ## Next Up
 
-- Feature 04 (TBD from feature-specs)
+- Feature 05 (TBD from feature-specs)
 
 ## Open Questions
 
